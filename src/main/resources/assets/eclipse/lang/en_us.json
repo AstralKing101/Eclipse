@@ -1,0 +1,16 @@
+{
+  "item.eclipse.lunarite": "Lunarite",
+  "item.eclipse.kypernite": "Kypernite",
+  "item.eclipse.solarite": "Solarite",
+  "item.eclipse.cosmonite": "Cosmonite",
+  "item.eclipse.eclipsinite": "Eclipsinite",
+  "item.eclipse.sun_jewel_fragment": "Sun Jewel Fragment",
+  "item.eclipse.lunar_crystal_shard": "Lunar Crystal Shard",
+  "item.eclipse.raw_solarite": "Raw Solarite",
+  "item.eclipse.raw_lunarite": "Raw Lunarite",
+
+  "block.eclipse.lunarite_ore": "Lunarite Ore",
+  "block.eclipse.solarite_ore": "Solarite Ore",
+  "block.eclipse.lunarite_block": "Lunarite Block",
+  "block.eclipse.solarite_block": "Solarite Block"
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "eclipse",
+	"version": "${version}",
+	"name": "Eclipse",
+	"description": "This Mod is about The sun and moon",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/eclipse/logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.anishanay.eclipse.Eclipse"
+		],
+		"fabric-datagen": [
+			"net.anishanay.eclipse.EclipseDataGenerator"
+		],
+		"client": [
+			"net.anishanay.eclipse.EclipseModClient"
+		]
+	},
+	"mixins": [
+		"eclipse.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
