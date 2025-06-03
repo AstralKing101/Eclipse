@@ -16,13 +16,13 @@ public class Eclipse implements ModInitializer {
 
 
 
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+	public static final Logger LOGGER = LoggerFactory.getLogger(Eclipse.class);
 
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModItemGroups.registerModItemGroups();
+		ModItemGroups.registerItemGroups();
 
 	}
 }

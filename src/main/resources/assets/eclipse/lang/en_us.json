@@ -12,5 +12,6 @@
   "block.eclipse.lunarite_ore": "Lunarite Ore",
   "block.eclipse.solarite_ore": "Solarite Ore",
   "block.eclipse.lunarite_block": "Lunarite Block",
-  "block.eclipse.solarite_block": "Solarite Block"
+  "block.eclipse.solarite_block": "Solarite Block",
+  "itemgroup.eclipse.eclipse": "Eclipse"
 }
