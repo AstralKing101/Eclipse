@@ -5,9 +5,9 @@
   "experience": 0.2,
   "group": "Eclipse",
   "ingredient": {
-    "item": "eclipse.raw_solarite"
+    "item": "eclipse:raw_solarite"
   },
   "result": {
-    "id": "eclipse.solarite"
+    "id": "eclipse:solarite"
   }
 }

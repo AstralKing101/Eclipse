@@ -5,9 +5,9 @@
   "experience": 0.2,
   "group": "Eclipse",
   "ingredient": {
-    "item": "eclipse:raw_lunarite"
+    "item": "eclipse:raw_silver"
   },
   "result": {
-    "id": "eclipse:lunarite"
+    "id": "eclipse:silver"
   }
 }

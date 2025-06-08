@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "eclipse:silver_ingot"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "#"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "eclipse:silver_rod"
+
+
+  }
+}

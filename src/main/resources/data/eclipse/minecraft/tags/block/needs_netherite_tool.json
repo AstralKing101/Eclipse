@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "eclipse:sun_stone",
+    "eclipse:moon_stone",
+    "eclipse:solarite_ore",
+    "eclipse:lunarite_ore",
+    "eclipse:lunarite_block",
+    "eclipse:solarite_block"
+
+
+
+
+
+
+  ]
+}

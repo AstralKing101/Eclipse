@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "eclipse:sun_jewel_fragment"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+
+  ],
+  "result": {
+    "count": 1,
+    "id": "eclipse:sun_jewel"
+
+
+  }
+}

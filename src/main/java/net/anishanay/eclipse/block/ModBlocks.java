@@ -23,6 +23,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
     public static final Block SOLARITE_BLOCK = registerBlock("solarite_block",
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
+    public static final Block SUN_STONE = registerBlock("sun_stone",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+    public static final Block MOON_STONE = registerBlock("moon_stone",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -43,6 +47,8 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.LUNARITE_ORE);
             fabricItemGroupEntries.add(ModBlocks.SOLARITE_ORE);
+            fabricItemGroupEntries.add(ModBlocks.SUN_STONE);
+            fabricItemGroupEntries.add(ModBlocks.MOON_STONE);
 
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {

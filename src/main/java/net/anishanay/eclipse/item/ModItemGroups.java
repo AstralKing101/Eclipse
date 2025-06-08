@@ -29,6 +29,15 @@ public class ModItemGroups {
                           entries.add(ModBlocks.SOLARITE_BLOCK);
                           entries.add(ModBlocks.LUNARITE_ORE);
                           entries.add(ModBlocks.SOLARITE_ORE);
+                          entries.add(ModItems.SUN_JEWEL);
+                          entries.add(ModItems.LUNAR_CRYSTAL);
+                          entries.add(ModItems.SILVER_ROD);
+                          entries.add(ModItems.GOLDEN_ROD);
+                          entries.add(ModItems.SILVER_INGOT);
+                          entries.add(ModItems.RAW_SILVER);
+                          entries.add(ModBlocks.SUN_STONE);
+                          entries.add(ModBlocks.MOON_STONE);
+
                       })
 
 
