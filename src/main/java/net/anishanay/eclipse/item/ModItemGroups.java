@@ -37,7 +37,7 @@ public class ModItemGroups {
                           entries.add(ModItems.RAW_SILVER);
                           entries.add(ModBlocks.SUN_STONE);
                           entries.add(ModBlocks.MOON_STONE);
-
+                          entries.add(ModItems.DIVINE_NECTAR);
                       })
 
 

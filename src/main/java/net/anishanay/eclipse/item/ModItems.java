@@ -25,8 +25,7 @@ public class ModItems {
       public static final Item GOLDEN_ROD = registerItem("golden_rod", new Item(new Item.Settings()));
       public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new Item.Settings()));
       public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new Item.Settings()));
-      public static final Item SUN_STAFF = registerItem("sun_staff", new Item(new Item.Settings()));
-
+      public static final Item DIVINE_NECTAR = registerItem("divine_nectar", new Item(new Item.Settings().food(ModFoodComponents.DIVINE_NECTAR)));
 
       private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Eclipse.MOD_ID, name), item);
@@ -53,7 +52,7 @@ public class ModItems {
             fabricItemGroupEntries.add(ModItems.GOLDEN_ROD);
             fabricItemGroupEntries.add(ModItems.SILVER_INGOT);
             fabricItemGroupEntries.add(ModItems.RAW_SILVER);
-            fabricItemGroupEntries.add(ModItems.SUN_STAFF);
+            fabricItemGroupEntries.add(ModItems.DIVINE_NECTAR);
         });
     }
 }
