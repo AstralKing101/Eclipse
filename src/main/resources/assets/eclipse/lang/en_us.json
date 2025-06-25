@@ -14,7 +14,11 @@
   "item.eclipse.golden_rod": "Golden Rod",
   "item.eclipse.silver_ingot": "Silver Ingot",
   "item.eclipse.raw_silver": "Raw Silver",
+  "item.eclipse.raw_kypernite": "Raw Kypernite",
+  "item.eclipse.raw_cosmonite": "Raw Cosmonite",
   "item.eclipse.divine_nectar": "Divine Nectar",
+  "item.eclipse.bottle_of_sunlight": "Bottle of Sunlight",
+  "item.eclipse.bottle_of_moonlight": "Bottle of Moonlight",
 
   "block.eclipse.lunarite_ore": "Lunarite Ore",
   "block.eclipse.solarite_ore": "Solarite Ore",

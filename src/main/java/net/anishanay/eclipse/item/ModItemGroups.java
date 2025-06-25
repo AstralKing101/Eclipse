@@ -38,6 +38,10 @@ public class ModItemGroups {
                           entries.add(ModBlocks.SUN_STONE);
                           entries.add(ModBlocks.MOON_STONE);
                           entries.add(ModItems.DIVINE_NECTAR);
+                          entries.add(ModItems.BOTTLE_OF_SUNLIGHT);
+                          entries.add(ModItems.BOTTLE_OF_MOONLIGHT);
+                          entries.add(ModItems.RAW_KYPERNITE);
+                          entries.add(ModItems.RAW_COSMONITE);
                       })
 
 

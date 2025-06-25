@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "Eclipse",
+  "ingredient": {
+    "item": "eclipse:raw_cosmonite"
+  },
+  "result": {
+    "id": "eclipse:cosmonite"
+  }
+}

@@ -25,7 +25,11 @@ public class ModItems {
       public static final Item GOLDEN_ROD = registerItem("golden_rod", new Item(new Item.Settings()));
       public static final Item SILVER_INGOT = registerItem("silver_ingot", new Item(new Item.Settings()));
       public static final Item RAW_SILVER = registerItem("raw_silver", new Item(new Item.Settings()));
+      public static final Item RAW_KYPERNITE = registerItem("raw_kypernite", new Item(new Item.Settings()));
+      public static final Item RAW_COSMONITE = registerItem("raw_cosmonite", new Item(new Item.Settings()));
       public static final Item DIVINE_NECTAR = registerItem("divine_nectar", new Item(new Item.Settings().food(ModFoodComponents.DIVINE_NECTAR)));
+      public static final Item BOTTLE_OF_SUNLIGHT = registerItem("bottle_of_sunlight", new Item(new Item.Settings().food(ModFoodComponents.BOTTLE_OF_SUNLIGHT)));
+      public static final Item BOTTLE_OF_MOONLIGHT = registerItem("bottle_of_moonlight", new Item(new Item.Settings().food(ModFoodComponents.BOTTLE_OF_MOONLIGHT)));
 
       private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Eclipse.MOD_ID, name), item);
@@ -52,7 +56,11 @@ public class ModItems {
             fabricItemGroupEntries.add(ModItems.GOLDEN_ROD);
             fabricItemGroupEntries.add(ModItems.SILVER_INGOT);
             fabricItemGroupEntries.add(ModItems.RAW_SILVER);
+            fabricItemGroupEntries.add(ModItems.RAW_COSMONITE);
+            fabricItemGroupEntries.add(ModItems.RAW_KYPERNITE);
             fabricItemGroupEntries.add(ModItems.DIVINE_NECTAR);
+            fabricItemGroupEntries.add(ModItems.BOTTLE_OF_SUNLIGHT);
+            fabricItemGroupEntries.add(ModItems.BOTTLE_OF_MOONLIGHT);
         });
     }
 }
