@@ -16,6 +16,8 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+
 }
 
 fabricApi {
@@ -38,6 +40,8 @@ dependencies {
 
 	implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
 	implementation 'org.apache.logging.log4j:log4j-api:2.20.0'
+
+
 
 }
 
@@ -87,4 +91,5 @@ publishing {
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
 	}
+
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "eclipse:lunarite"
+    },
+    "/": {
+      "item": "eclipse:silver_rod"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "/"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eclipse:lunar_blade"
+  }
+}

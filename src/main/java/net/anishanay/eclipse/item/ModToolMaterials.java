@@ -1,14 +1,11 @@
 package net.anishanay.eclipse.item;
 
 import com.google.common.base.Suppliers;
-import net.anishanay.eclipse.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 
 import java.util.Objects;
@@ -16,7 +13,9 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    SOLARITE(ModTags.Blocks.INCORRECT_FOR__TOOL, 2031, 9.0F, 4.0F, 15, () -> Ingredient.ofItems(new ItemConvertible[]{Items.NETHERITE_INGOT}));
+    SOLARITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3036, 9.0F, 7.0F, 10, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.SOLARITE})),
+    LUNARITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3036, 9.0F, 7.0F, 10, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.LUNARITE}));
+
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

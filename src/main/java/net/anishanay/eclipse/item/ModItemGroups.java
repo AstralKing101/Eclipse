@@ -21,6 +21,14 @@ public class ModItemGroups {
                           entries.add(ModItems.LUNAR_CRYSTAL_SHARD);
                           entries.add(ModItems.RAW_LUNARITE);
                           entries.add(ModItems.SOLARITE);
+                          entries.add(ModItems.SOLARITE_HELMET);
+                          entries.add(ModItems.SOLARITE_LEGGINGS);
+                          entries.add(ModItems.SOLARITE_CHESTPLATE);
+                          entries.add(ModItems.SOLARITE_BOOTS);
+                          entries.add(ModItems.LUNARITE_HELMET);
+                          entries.add(ModItems.LUNARITE_LEGGINGS);
+                          entries.add(ModItems.LUNARITE_CHESTPLATE);
+                          entries.add(ModItems.LUNARITE_BOOTS);
                           entries.add(ModItems.RAW_SOLARITE);
                           entries.add(ModItems.KYPERNITE);
                           entries.add(ModItems.SUN_JEWEL_FRAGMENT);
@@ -42,6 +50,13 @@ public class ModItemGroups {
                           entries.add(ModItems.BOTTLE_OF_MOONLIGHT);
                           entries.add(ModItems.RAW_KYPERNITE);
                           entries.add(ModItems.RAW_COSMONITE);
+                          entries.add(ModItems.SOLAR_BLADE);
+                          entries.add(ModItems.LUNAR_BLADE);
+                          entries.add(ModBlocks.ASHWOOD_LOG);
+                          entries.add(ModBlocks.ASHWOOD_PLANKS);
+                          entries.add(ModBlocks.ASHWOOD_LEAVES);
+
+
                       })
 
 

@@ -18,7 +18,19 @@
   "item.eclipse.raw_cosmonite": "Raw Cosmonite",
   "item.eclipse.divine_nectar": "Divine Nectar",
   "item.eclipse.bottle_of_sunlight": "Bottle of Sunlight",
+
   "item.eclipse.bottle_of_moonlight": "Bottle of Moonlight",
+  "item.eclipse.solar_blade": "Solar Blade",
+  "item.eclipse.lunar_blade": "Lunar Blade",
+  "item.eclipse.solarite_helmet": "Solarite Helmet",
+  "item.eclipse.solarite_boots": "Solarite Boots",
+  "item.eclipse.solarite_leggings": "Solarite Leggings",
+  "item.eclipse.solarite_chestplate": "Solarite Chestplate",
+  "item.eclipse.lunarite_helmet": "Lunarite Helmet",
+  "item.eclipse.lunarite_boots": "Lunarite Boots",
+  "item.eclipse.lunarite_leggings": "Lunarite Leggings",
+  "item.eclipse.lunarite_chestplate": "Lunarite Chestplate",
+
 
   "block.eclipse.lunarite_ore": "Lunarite Ore",
   "block.eclipse.solarite_ore": "Solarite Ore",
@@ -26,5 +38,11 @@
   "block.eclipse.solarite_block": "Solarite Block",
   "block.eclipse.sun_stone": "Sun Stone",
   "block.eclipse.moon_stone": "Moon Stone",
+  "block.eclipse.ashwood_planks": "Ashwood Planks",
+  "block.eclipse.ashwood_log": "Ashwood Log",
+  "block.eclipse.ashwood_leaves": "Ashwood Leaves",
+  "block.eclipse.glimmerwood_planks": "Glimmerwood Planks",
+  "block.eclipse.glimmerwood_log": "Glimmerwood Log",
+  "block.eclipse.glimmerwood_leaves": "Glimmerwood Leaves",
   "itemgroup.eclipse.eclipse": "Eclipse"
 }

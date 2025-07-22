@@ -27,6 +27,19 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
     public static final Block MOON_STONE = registerBlock("moon_stone",
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
+    public static final Block ASHWOOD_LOG = registerBlock("ashwood_log",
+            new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block ASHWOOD_PLANKS = registerBlock("ashwood_planks",
+            new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block ASHWOOD_LEAVES = registerBlock("ashwood_leaves",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.CHERRY_LEAVES)));
+    public static final Block GLIMMERWOOD_LOG = registerBlock("glimmerwood_log",
+            new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block GLIMMERWOOD_PLANKS = registerBlock("glimmerwood_planks",
+            new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block GLIMMERWOOD_LEAVES = registerBlock("glimmerwood_leaves",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.CHERRY_LEAVES)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -49,6 +62,12 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.SOLARITE_ORE);
             fabricItemGroupEntries.add(ModBlocks.SUN_STONE);
             fabricItemGroupEntries.add(ModBlocks.MOON_STONE);
+            fabricItemGroupEntries.add(ModBlocks.ASHWOOD_LOG);
+            fabricItemGroupEntries.add(ModBlocks.ASHWOOD_PLANKS);
+            fabricItemGroupEntries.add(ModBlocks.ASHWOOD_LEAVES);
+            fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_LOG);
+            fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_PLANKS);
+            fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_LEAVES);
 
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {

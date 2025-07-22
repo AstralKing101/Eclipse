@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "eclipse:solarite"
+    },
+    "/": {
+      "item": "eclipse:golden_rod"
+    }
+  },
+  "pattern": [
+    "#",
+    "#",
+    "/"
+  ],
+  "result": {
+    "count": 1,
+    "id": "eclipse:solar_blade"
+  }
+}
