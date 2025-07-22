@@ -24,5 +24,6 @@ public class Eclipse implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 
+
 	}
 }
