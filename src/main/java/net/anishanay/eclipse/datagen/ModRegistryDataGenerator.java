@@ -17,6 +17,8 @@ public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider {
     protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
 
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.ENCHANTMENT));
+
+
     }
 
     @Override

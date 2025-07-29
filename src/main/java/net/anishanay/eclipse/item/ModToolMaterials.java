@@ -13,8 +13,8 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
 
-    SOLARITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3036, 9.0F, 7.0F, 10, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.SOLARITE})),
-    LUNARITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3036, 9.0F, 7.0F, 10, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.LUNARITE}));
+    SOLARITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3036, 9.0F, 6.0F, 10, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.SOLARITE})),
+    LUNARITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3036, 9.0F, 6.0F, 10, () -> Ingredient.ofItems(new ItemConvertible[]{ModItems.LUNARITE}));
 
 
     private final TagKey<Block> inverseTag;

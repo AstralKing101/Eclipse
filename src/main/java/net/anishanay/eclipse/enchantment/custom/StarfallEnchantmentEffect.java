@@ -24,7 +24,7 @@ public record StarfallEnchantmentEffect() implements EnchantmentEntityEffect {
         if(level == 3) {
             EntityType.LIGHTNING_BOLT.spawn(world, user.getBlockPos(), SpawnReason.TRIGGERED);
             EntityType.LIGHTNING_BOLT.spawn(world, user.getBlockPos(), SpawnReason.TRIGGERED);
-            EntityType.LIGHTNING_BOLT.spawn(world, user.getBlockPos(), SpawnReason.TRIGGERED);
+
         }
 
     }
