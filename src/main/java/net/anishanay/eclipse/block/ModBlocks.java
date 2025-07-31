@@ -39,6 +39,8 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block GLIMMERWOOD_LEAVES = registerBlock("glimmerwood_leaves",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.CHERRY_LEAVES)));
+    public static final Block SUNBURNT_GRASS_BLOCK = registerBlock("sunburnt_grass_block",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.GRASS)));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -68,6 +70,7 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_LOG);
             fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_PLANKS);
             fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_LEAVES);
+            fabricItemGroupEntries.add(ModBlocks.SUNBURNT_GRASS_BLOCK);
 
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
