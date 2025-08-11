@@ -1,9 +1,9 @@
 package net.anishanay.eclipse.block;
 
 import net.anishanay.eclipse.Eclipse;
+import net.anishanay.eclipse.world.gen.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -41,6 +41,20 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.CHERRY_LEAVES)));
     public static final Block SUNBURNT_GRASS_BLOCK = registerBlock("sunburnt_grass_block",
             new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.GRASS)));
+    public static final Block MOONLIT_GRASS_BLOCK = registerBlock("moonlit_grass_block",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.GRASS)));
+    public static final Block SUNBURNT_DIRT = registerBlock("sunburnt_dirt",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.GRASS)));
+    public static final Block MOONLIT_DIRT = registerBlock("moonlit_dirt",
+            new Block(AbstractBlock.Settings.create().strength(1f).requiresTool().sounds(BlockSoundGroup.GRASS)));
+    public static final Block SOLARSLATE = registerBlock("solarslate",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block LUNARSLATE = registerBlock("lunarslate",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block ASHWOOD_SAPLING = registerBlock("ashwood_sapling",
+            new SaplingBlock(ModSaplingGenerators.ASHWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
+
+
 
 
     private static Block registerBlock(String name, Block block) {
@@ -71,6 +85,12 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_PLANKS);
             fabricItemGroupEntries.add(ModBlocks.GLIMMERWOOD_LEAVES);
             fabricItemGroupEntries.add(ModBlocks.SUNBURNT_GRASS_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.MOONLIT_GRASS_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.SUNBURNT_DIRT);
+            fabricItemGroupEntries.add(ModBlocks.MOONLIT_DIRT);
+            fabricItemGroupEntries.add(ModBlocks.SOLARSLATE);
+            fabricItemGroupEntries.add(ModBlocks.LUNARSLATE);
+            fabricItemGroupEntries.add(ModBlocks.ASHWOOD_SAPLING);
 
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {

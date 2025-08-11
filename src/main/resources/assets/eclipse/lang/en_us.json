@@ -22,6 +22,7 @@
   "item.eclipse.bottle_of_moonlight": "Bottle of Moonlight",
   "item.eclipse.solar_blade": "Solar Blade",
   "item.eclipse.lunar_blade": "Lunar Blade",
+  "item.eclipse.neevan": "Neevan",
   "item.eclipse.solarite_helmet": "Solarite Helmet",
   "item.eclipse.solarite_boots": "Solarite Boots",
   "item.eclipse.solarite_leggings": "Solarite Leggings",
@@ -31,6 +32,7 @@
   "item.eclipse.lunarite_leggings": "Lunarite Leggings",
   "item.eclipse.lunarite_chestplate": "Lunarite Chestplate",
   "enchantment.eclipse.starfall": "Starfall",
+  "enchantment.eclipse.dragons_bane": "Dragon's Bane",
 
 
 
@@ -47,5 +49,8 @@
   "block.eclipse.glimmerwood_log": "Glimmerwood Log",
   "block.eclipse.glimmerwood_leaves": "Glimmerwood Leaves",
   "block.eclipse.sunburnt_grass_block": "Sunburnt Grass Block",
+  "block.eclipse.sunburnt_dirt": "Sunburnt Dirt",
+  "block.eclipse.solarslate": "Solarslate",
+  "block.eclipse.ashwood_sapling": "Ashwood Sapling",
   "itemgroup.eclipse.eclipse": "Eclipse"
 }

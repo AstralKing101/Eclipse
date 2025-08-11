@@ -1,7 +1,7 @@
 {
   "aquifers_enabled": true,
   "default_block": {
-    "Name": "eclipse:sun_stone"
+    "Name": "eclipse:moon_stone"
   },
   "default_fluid": {
     "Name": "minecraft:water",
@@ -458,7 +458,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "eclipse:sun_stone"
+                                    "Name": "eclipse:moon_stone"
                                   }
                                 }
                               }
@@ -479,7 +479,7 @@
                               "then_run": {
                                 "type": "minecraft:block",
                                 "result_state": {
-                                  "Name": "eclipse:sunburnt_grass_block",
+                                  "Name": "eclipse:moonlit_grass_block",
                                   "Properties": {
                                     "snowy": "false"
                                   }
@@ -489,7 +489,7 @@
                             {
                               "type": "minecraft:block",
                               "result_state": {
-                                "Name": "eclipse:sunburnt_dirt"
+                                "Name": "eclipse:moonlit_dirt"
                               }
                             }
                           ]
@@ -545,7 +545,7 @@
                                 "then_run": {
                                   "type": "minecraft:block",
                                   "result_state": {
-                                    "Name": "eclipse:sun_stone"
+                                    "Name": "eclipse:moon_stone"
                                   }
                                 }
                               }
@@ -555,7 +555,7 @@
                         {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "eclipse:sunburnt_dirt"
+                            "Name": "eclipse:moonlit_dirt"
                           }
                         }
                       ]
@@ -591,7 +591,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "eclipse:sun_stone"
+                            "Name": "eclipse:moon_stone"
                           }
                         }
                       },
@@ -624,7 +624,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "eclipse:solarslate",
+            "Name": "eclipse:lunarslate",
             "Properties": {
               "axis": "y"
             }

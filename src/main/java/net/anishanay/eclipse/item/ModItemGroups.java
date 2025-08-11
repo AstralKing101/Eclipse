@@ -59,6 +59,7 @@ public class ModItemGroups {
                           entries.add(ModBlocks.GLIMMERWOOD_LEAVES);
                           entries.add(ModBlocks.GLIMMERWOOD_PLANKS);
                           entries.add(ModBlocks.SUNBURNT_GRASS_BLOCK);
+                          entries.add(ModBlocks.ASHWOOD_SAPLING);
 
 
 

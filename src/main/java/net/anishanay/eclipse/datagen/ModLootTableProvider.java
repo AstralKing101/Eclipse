@@ -9,19 +9,16 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.concurrent.CompletableFuture;
 
 
-//public class ModLootTableProvider extends FabricBlockLootTableProvider {
-    //public  ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
-        //super(dataOutput, registryLookup);
-    //}
-   //@Override
-   // public void generate() {
-       // addDrop(ModBlocks.LUNARITE_BLOCK);
-     //   addDrop(ModBlocks.SOLARITE_BLOCK);
-       // addDrop(ModBlocks.SUN_STONE);
-      //  addDrop(ModBlocks.MOON_STONE);
+ public class ModLootTableProvider extends FabricBlockLootTableProvider {
+     public  ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+         super(dataOutput, registryLookup);
+     }
+    @Override
+     public void generate() {
+       addDrop((ModBlocks.ASHWOOD_LOG));
+       addDrop((ModBlocks.ASHWOOD_PLANKS));
+       addDrop((ModBlocks.ASHWOOD_SAPLING));
+       addDrop(ModBlocks.ASHWOOD_LEAVES, leavesDrops(ModBlocks.ASHWOOD_LEAVES, ModBlocks.ASHWOOD_SAPLING, 0.0625f));
 
-      //  addDrop(ModBlocks.LUNARITE_ORE, oreDrops(ModBlocks.LUNARITE_ORE, ModItems.RAW_LUNARITE));
-       // addDrop(ModBlocks.SOLARITE_ORE, oreDrops(ModBlocks.SOLARITE_ORE, ModItems.RAW_SOLARITE));
-
-  // }
-//}
+    }
+ }

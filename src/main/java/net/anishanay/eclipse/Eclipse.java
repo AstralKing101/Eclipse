@@ -6,6 +6,7 @@ import net.anishanay.eclipse.enchantment.ModEnchantments;
 import net.anishanay.eclipse.item.ModItemGroups;
 import net.anishanay.eclipse.item.ModItems;
 import net.anishanay.eclipse.item.custom.ModArmorItem;
+import net.anishanay.eclipse.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.client.session.telemetry.TelemetryLogManager;
@@ -27,7 +28,7 @@ public class Eclipse implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
 		ModEnchantmentEffects.registerEnchantmentEffects();
-
+		ModWorldGeneration.generateModWorldGen();
 
 
 
