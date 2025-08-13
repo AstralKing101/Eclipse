@@ -51,6 +51,12 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block LUNARSLATE = registerBlock("lunarslate",
             new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block SILVER_ORE = registerBlock("silver_ore",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block COSMONITE_ORE = registerBlock("cosmonite_ore",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+    public static final Block KYPERNITE_ORE = registerBlock("kypernite_ore",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
     public static final Block ASHWOOD_SAPLING = registerBlock("ashwood_sapling",
             new SaplingBlock(ModSaplingGenerators.ASHWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
 
@@ -91,6 +97,9 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.SOLARSLATE);
             fabricItemGroupEntries.add(ModBlocks.LUNARSLATE);
             fabricItemGroupEntries.add(ModBlocks.ASHWOOD_SAPLING);
+            fabricItemGroupEntries.add(ModBlocks.SILVER_ORE);
+            fabricItemGroupEntries.add(ModBlocks.COSMONITE_ORE);
+            fabricItemGroupEntries.add(ModBlocks.KYPERNITE_ORE);
 
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {

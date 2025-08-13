@@ -22,6 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
           blockStateModelGenerator.registerSingleton(ModBlocks.MOONLIT_DIRT, TexturedModel.CUBE_ALL);
           blockStateModelGenerator.registerSingleton(ModBlocks.SOLARSLATE, TexturedModel.CUBE_ALL);
           blockStateModelGenerator.registerSingleton(ModBlocks.LUNARSLATE, TexturedModel.CUBE_ALL);
+          blockStateModelGenerator.registerSingleton(ModBlocks.SILVER_ORE, TexturedModel.CUBE_ALL);
+          blockStateModelGenerator.registerSingleton(ModBlocks.COSMONITE_ORE, TexturedModel.CUBE_ALL);
+          blockStateModelGenerator.registerSingleton(ModBlocks.KYPERNITE_ORE, TexturedModel.CUBE_ALL);
           blockStateModelGenerator.registerTintableCross(ModBlocks.ASHWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
           }

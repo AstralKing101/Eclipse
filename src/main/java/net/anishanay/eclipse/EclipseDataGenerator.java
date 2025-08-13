@@ -1,6 +1,7 @@
 package net.anishanay.eclipse;
 
 
+import net.anishanay.eclipse.datagen.ModLootTableProvider;
 import net.anishanay.eclipse.datagen.ModModelProvider;
 import net.anishanay.eclipse.datagen.ModRegistryDataGenerator;
 import net.anishanay.eclipse.enchantment.ModEnchantments;
@@ -18,6 +19,7 @@ public class EclipseDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModRegistryDataGenerator::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModLootTableProvider::new);
 
 
 	}
@@ -30,6 +32,7 @@ public class EclipseDataGenerator implements DataGeneratorEntrypoint {
 				.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder
 				.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+
 
 
 

@@ -18,6 +18,9 @@ import java.util.concurrent.CompletableFuture;
        addDrop((ModBlocks.ASHWOOD_LOG));
        addDrop((ModBlocks.ASHWOOD_PLANKS));
        addDrop((ModBlocks.ASHWOOD_SAPLING));
+       addDrop((ModBlocks.KYPERNITE_ORE), oreDrops(ModBlocks.KYPERNITE_ORE, ModItems.RAW_KYPERNITE));
+       addDrop((ModBlocks.COSMONITE_ORE), oreDrops(ModBlocks.COSMONITE_ORE, ModItems.RAW_COSMONITE));
+       addDrop((ModBlocks.SILVER_ORE), oreDrops(ModBlocks.SILVER_ORE, ModItems.RAW_SILVER));
        addDrop(ModBlocks.ASHWOOD_LEAVES, leavesDrops(ModBlocks.ASHWOOD_LEAVES, ModBlocks.ASHWOOD_SAPLING, 0.0625f));
 
     }

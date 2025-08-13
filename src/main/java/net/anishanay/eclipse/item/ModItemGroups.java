@@ -60,6 +60,9 @@ public class ModItemGroups {
                           entries.add(ModBlocks.GLIMMERWOOD_PLANKS);
                           entries.add(ModBlocks.SUNBURNT_GRASS_BLOCK);
                           entries.add(ModBlocks.ASHWOOD_SAPLING);
+                          entries.add(ModBlocks.COSMONITE_ORE);
+                          entries.add(ModBlocks.KYPERNITE_ORE);
+                          entries.add(ModBlocks.SILVER_ORE);
 
 
 

@@ -22,7 +22,7 @@
   "item.eclipse.bottle_of_moonlight": "Bottle of Moonlight",
   "item.eclipse.solar_blade": "Solar Blade",
   "item.eclipse.lunar_blade": "Lunar Blade",
-  "item.eclipse.neevan": "Neevan",
+
   "item.eclipse.solarite_helmet": "Solarite Helmet",
   "item.eclipse.solarite_boots": "Solarite Boots",
   "item.eclipse.solarite_leggings": "Solarite Leggings",
@@ -38,6 +38,7 @@
 
   "block.eclipse.lunarite_ore": "Lunarite Ore",
   "block.eclipse.solarite_ore": "Solarite Ore",
+  "block.eclipse.silver_ore": "Silver Ore",
   "block.eclipse.lunarite_block": "Lunarite Block",
   "block.eclipse.solarite_block": "Solarite Block",
   "block.eclipse.sun_stone": "Sun Stone",
