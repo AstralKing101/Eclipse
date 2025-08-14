@@ -1,5 +1,7 @@
-// 1.21.1	2025-08-11T17:27:16.3670793	Eclipse/
+// 1.21.1	2025-08-13T16:09:32.1473286	Eclipse/
 9911419577f5ae6494381f6fe0c7d3453ab3e4fe data\eclipse\worldgen\placed_feature\ashwood_placed.json
 b50ef59cc3d70cda08f38c5ac050839581a41a1c data\eclipse\enchantment\dragons_bane.json
+abdcedd14d4e6079947f6c8004c5c9d8e826f4a2 data\eclipse\worldgen\configured_feature\solarite_ore.json
 840d38a319c704619a2a128c4832f13d23892eb5 data\eclipse\enchantment\starfall.json
 7af9464448a1aab438936aa5c8873a4a1b8ddb05 data\eclipse\worldgen\configured_feature\ashwood.json
+e268db6b17d3b2b38a213fcf608421bdf6745ded data\eclipse\worldgen\placed_feature\solarite_ore_placed.json

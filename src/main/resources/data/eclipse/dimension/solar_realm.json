@@ -6,7 +6,7 @@
     "biome_source": {
       "biomes": [
         {
-          "biome": "eclipse:custom_biome_1",
+          "biome": "eclipse:solar_light",
           "parameters": {
             "continentalness": [
               -0.19,
@@ -33,7 +33,7 @@
           }
         },
         {
-          "biome": "eclipse:custom_biome_2",
+          "biome": "eclipse:sunlit_habitat",
           "parameters": {
             "continentalness": [
               0.03,

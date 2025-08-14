@@ -1,5 +1,6 @@
 package net.anishanay.eclipse.world.gen;
 
+import net.anishanay.eclipse.world.ModOreGeneration;
 import net.anishanay.eclipse.world.gen.tree.ModTreeGeneration;
 
 public class ModWorldGeneration {
@@ -7,5 +8,6 @@ public class ModWorldGeneration {
 
 
         ModTreeGeneration.generateTrees();
+        ModOreGeneration.generateOres();
     }
 }

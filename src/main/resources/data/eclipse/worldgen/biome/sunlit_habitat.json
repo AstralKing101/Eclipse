@@ -1,0 +1,55 @@
+{
+  "carvers": {
+     "air":[
+  "minecraft:cave_extra_underground"
+           ]
+
+    },
+  "downfall": 0.3,
+  "temperature": 0.2,
+  "has_precipitation": true,
+  "effects": {
+    "fog_color": 12638463,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 8233727,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground",
+      "minecraft:lake_lava_surface"
+    ],
+    [
+
+    ],
+    [
+
+    ],
+    [],
+    [],
+    [
+      "eclipse:solarite_ore_placed"
+
+    ],
+    [
+
+    ],
+    [
+      "minecraft:spring_water",
+      "minecraft:spring_lava"
+    ],
+    [
+      "eclipse:ashwood_placed"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ]}
+
