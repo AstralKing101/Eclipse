@@ -2,6 +2,7 @@ package net.anishanay.eclipse.item;
 
 import net.anishanay.eclipse.Eclipse;
 import net.anishanay.eclipse.item.custom.ModArmorItem;
+import net.anishanay.eclipse.item.custom.SolarBlade;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -30,7 +31,7 @@ public class ModItems {
       public static final Item DIVINE_NECTAR = registerItem("divine_nectar", new Item(new Item.Settings().food(ModFoodComponents.DIVINE_NECTAR)));
       public static final Item BOTTLE_OF_SUNLIGHT = registerItem("bottle_of_sunlight", new Item(new Item.Settings().food(ModFoodComponents.BOTTLE_OF_SUNLIGHT)));
       public static final Item BOTTLE_OF_MOONLIGHT = registerItem("bottle_of_moonlight", new Item(new Item.Settings().food(ModFoodComponents.BOTTLE_OF_MOONLIGHT)));
-      public static final Item SOLAR_BLADE = registerItem("solar_blade", new SwordItem(ModToolMaterials.SOLARITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.SOLARITE, 10,-3f))));
+      public static final Item SOLAR_BLADE = registerItem("solar_blade", new SwordItem(ModToolMaterials.SOLARITE, new Item.Settings().attributeModifiers(SolarBlade.createAttributeModifiers(ModToolMaterials.SOLARITE, 10,-3f))));
       public static final Item LUNAR_BLADE = registerItem("lunar_blade", new SwordItem(ModToolMaterials.LUNARITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.LUNARITE, 10,-3f))));
 
       public static final Item SOLARITE_HELMET = registerItem("solarite_helmet", new ArmorItem(ModArmorMaterials.SOLARITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50))));
