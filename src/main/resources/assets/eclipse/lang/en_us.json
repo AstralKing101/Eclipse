@@ -23,6 +23,7 @@
   "item.eclipse.solar_blade": "Solar Blade",
   "item.eclipse.lunar_blade": "Lunar Blade",
 
+
   "item.eclipse.solarite_helmet": "Solarite Helmet",
   "item.eclipse.solarite_boots": "Solarite Boots",
   "item.eclipse.solarite_leggings": "Solarite Leggings",
@@ -33,12 +34,16 @@
   "item.eclipse.lunarite_chestplate": "Lunarite Chestplate",
   "enchantment.eclipse.starfall": "Starfall",
   "enchantment.eclipse.dragons_bane": "Dragon's Bane",
+  "enchantment.eclipse.explosive": "Explosive",
 
 
 
   "block.eclipse.lunarite_ore": "Lunarite Ore",
   "block.eclipse.solarite_ore": "Solarite Ore",
   "block.eclipse.silver_ore": "Silver Ore",
+  "block.eclipse.kypernite_ore": "Kypernite Ore",
+  "block.eclipse.cosmonite_ore": "Cosmonite Ore",
+
   "block.eclipse.lunarite_block": "Lunarite Block",
   "block.eclipse.solarite_block": "Solarite Block",
   "block.eclipse.sun_stone": "Sun Stone",

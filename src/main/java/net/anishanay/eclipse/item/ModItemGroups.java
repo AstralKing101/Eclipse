@@ -51,6 +51,7 @@ public class ModItemGroups {
                           entries.add(ModItems.RAW_KYPERNITE);
                           entries.add(ModItems.RAW_COSMONITE);
                           entries.add(ModItems.SOLAR_BLADE);
+
                           entries.add(ModItems.LUNAR_BLADE);
                           entries.add(ModBlocks.ASHWOOD_LOG);
                           entries.add(ModBlocks.ASHWOOD_PLANKS);

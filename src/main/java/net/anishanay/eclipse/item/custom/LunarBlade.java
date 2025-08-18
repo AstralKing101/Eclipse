@@ -18,9 +18,9 @@ import net.minecraft.world.World;
 
 import java.util.List;
 
-public class SolarBlade extends SwordItem {
+public class LunarBlade extends SwordItem {
 
-    public SolarBlade(ToolMaterial toolMaterial, Settings settings) {
+    public LunarBlade(ToolMaterial toolMaterial, Settings settings) {
         super(toolMaterial, settings);
     }
 
@@ -122,5 +122,7 @@ public class SolarBlade extends SwordItem {
                 }
             }
         }
+
+
     }
 }

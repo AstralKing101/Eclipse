@@ -1,6 +1,7 @@
 package net.anishanay.eclipse.item;
 
 import net.anishanay.eclipse.Eclipse;
+import net.anishanay.eclipse.item.custom.LunarBlade;
 import net.anishanay.eclipse.item.custom.ModArmorItem;
 import net.anishanay.eclipse.item.custom.SolarBlade;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -31,8 +32,9 @@ public class ModItems {
       public static final Item DIVINE_NECTAR = registerItem("divine_nectar", new Item(new Item.Settings().food(ModFoodComponents.DIVINE_NECTAR)));
       public static final Item BOTTLE_OF_SUNLIGHT = registerItem("bottle_of_sunlight", new Item(new Item.Settings().food(ModFoodComponents.BOTTLE_OF_SUNLIGHT)));
       public static final Item BOTTLE_OF_MOONLIGHT = registerItem("bottle_of_moonlight", new Item(new Item.Settings().food(ModFoodComponents.BOTTLE_OF_MOONLIGHT)));
-      public static final Item SOLAR_BLADE = registerItem("solar_blade", new SwordItem(ModToolMaterials.SOLARITE, new Item.Settings().attributeModifiers(SolarBlade.createAttributeModifiers(ModToolMaterials.SOLARITE, 10,-3f))));
-      public static final Item LUNAR_BLADE = registerItem("lunar_blade", new SwordItem(ModToolMaterials.LUNARITE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.LUNARITE, 10,-3f))));
+      public static final Item SOLAR_BLADE = registerItem("solar_blade", new SolarBlade(ModToolMaterials.SOLARITE, new Item.Settings().attributeModifiers(SolarBlade.createAttributeModifiers(ModToolMaterials.SOLARITE, 10,-3f))));
+      public static final Item LUNAR_BLADE = registerItem("lunar_blade", new LunarBlade(ModToolMaterials.LUNARITE, new Item.Settings().attributeModifiers(LunarBlade.createAttributeModifiers(ModToolMaterials.LUNARITE, 10,-3f))));
+
 
       public static final Item SOLARITE_HELMET = registerItem("solarite_helmet", new ArmorItem(ModArmorMaterials.SOLARITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50))));
       public static final Item SOLARITE_CHESTPLATE = registerItem("solarite_chestplate", new ModArmorItem(ModArmorMaterials.SOLARITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(50))));
@@ -82,6 +84,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModItems.SOLAR_BLADE);
             fabricItemGroupEntries.add(ModItems.LUNAR_BLADE);
+
 
             fabricItemGroupEntries.add(ModItems.SOLARITE_HELMET);
             fabricItemGroupEntries.add(ModItems.SOLARITE_CHESTPLATE);

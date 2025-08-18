@@ -8,5 +8,6 @@ public class EclipseModClient  implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ASHWOOD_SAPLING, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ASHWOOD_LEAVES, RenderLayer.getCutout());
     }
 }

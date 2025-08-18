@@ -4,6 +4,7 @@ package net.anishanay.eclipse.enchantment;
 import com.mojang.serialization.MapCodec;
 import net.anishanay.eclipse.Eclipse;
 import net.anishanay.eclipse.enchantment.custom.DragonsBaneEnchantmentEffect;
+import net.anishanay.eclipse.enchantment.custom.ExplosiveEnchantmentEffect;
 import net.anishanay.eclipse.enchantment.custom.StarfallEnchantmentEffect;
 import net.minecraft.enchantment.effect.EnchantmentEntityEffect;
 import net.minecraft.registry.Registries;
@@ -21,6 +22,10 @@ public class ModEnchantmentEffects {
     }
     public static final MapCodec<? extends EnchantmentEntityEffect> DRAGONS_BANE =
             registerEntityEffect("dragons_bane", DragonsBaneEnchantmentEffect.CODEC);
+    public static final MapCodec<? extends EnchantmentEntityEffect> EXPLOSIVE =
+            registerEntityEffect("explosive", ExplosiveEnchantmentEffect.CODEC);
+
+
 
 
 

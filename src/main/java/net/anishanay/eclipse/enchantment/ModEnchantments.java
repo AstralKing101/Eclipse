@@ -3,68 +3,92 @@ package net.anishanay.eclipse.enchantment;
 import net.anishanay.eclipse.Eclipse;
 import net.anishanay.eclipse.enchantment.custom.DragonsBaneEnchantmentEffect;
 import net.anishanay.eclipse.enchantment.custom.StarfallEnchantmentEffect;
+import net.anishanay.eclipse.enchantment.custom.ExplosiveEnchantmentEffect;
 import net.minecraft.component.EnchantmentEffectComponentTypes;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.effect.EnchantmentEffectTarget;
 import net.minecraft.registry.Registerable;
-
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
-
 import net.minecraft.registry.tag.EnchantmentTags;
 import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 
-import static net.anishanay.eclipse.enchantment.ModEnchantmentEffects.DRAGONS_BANE;
-
 public class ModEnchantments {
-   public static final RegistryKey<Enchantment> STARFALL =
-           RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Eclipse.MOD_ID, "starfall"));
+    public static final RegistryKey<Enchantment> STARFALL =
+            RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Eclipse.MOD_ID, "starfall"));
 
-   public static void bootstrap(Registerable<Enchantment> registerable) {
-       var enchantments = registerable.getRegistryLookup(RegistryKeys.ENCHANTMENT);
-       var items = registerable.getRegistryLookup(RegistryKeys.ITEM);
+    public static final RegistryKey<Enchantment> DRAGONS_BANE =
+            RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Eclipse.MOD_ID, "dragons_bane"));
 
-       register(registerable, STARFALL, Enchantment.builder(Enchantment.definition(
-               items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
-               items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
-               5,
-               2,
-               Enchantment.leveledCost(5, 7),
-               Enchantment.leveledCost(25, 9),
-               10,
-               AttributeModifierSlot.MAINHAND
-       ))
-                       .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
-                       .addEffect(EnchantmentEffectComponentTypes.POST_ATTACK,
-                               EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
-                               new StarfallEnchantmentEffect())
+    public static final RegistryKey<Enchantment> EXPLOSIVE =
+            RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Eclipse.MOD_ID, "explosive"));
 
+    public static void bootstrap(Registerable<Enchantment> registerable) {
+        var enchantments = registerable.getRegistryLookup(RegistryKeys.ENCHANTMENT);
+        var items = registerable.getRegistryLookup(RegistryKeys.ITEM);
 
+        register(registerable, STARFALL, Enchantment.builder(
+                        Enchantment.definition(
+                                items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
+                                items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
+                                5,
+                                2,
+                                Enchantment.leveledCost(5, 7),
+                                Enchantment.leveledCost(25, 9),
+                                10,
+                                AttributeModifierSlot.MAINHAND
+                        ))
+                .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
+                .addEffect(
+                        EnchantmentEffectComponentTypes.POST_ATTACK,
+                        EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
+                        new StarfallEnchantmentEffect()
+                )
+        );
 
-       );
-       final RegistryKey<Enchantment> DRAGONS_BANE =
-               RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(Eclipse.MOD_ID, "dragons_bane"));
+        register(registerable, DRAGONS_BANE, Enchantment.builder(
+                        Enchantment.definition(
 
+                                items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
+                                6,
+                                1,
+                                Enchantment.leveledCost(10, 8),
+                                Enchantment.leveledCost(50, 10),
+                                11,
+                                AttributeModifierSlot.MAINHAND
+                        ))
+                .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
+                .addEffect(
+                        EnchantmentEffectComponentTypes.POST_ATTACK,
+                        EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
+                        new DragonsBaneEnchantmentEffect()
+                )
+        );
 
-       register(registerable, DRAGONS_BANE, Enchantment.builder(Enchantment.definition(
-                       items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
-                       items.getOrThrow(ItemTags.SWORD_ENCHANTABLE),
-                       6,
-                       1,
-                       Enchantment.leveledCost(10, 8),
-                       Enchantment.leveledCost(50, 10),
-                       11,
-                       AttributeModifierSlot.MAINHAND
-               ))
-               .exclusiveSet(enchantments.getOrThrow(EnchantmentTags.DAMAGE_EXCLUSIVE_SET))
-               .addEffect(EnchantmentEffectComponentTypes.POST_ATTACK,
-                       EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
-                       new DragonsBaneEnchantmentEffect()));
-   }
-   private static void register(Registerable<Enchantment> registry, RegistryKey<Enchantment> key, Enchantment.Builder builder) {
+        register(registerable, EXPLOSIVE, Enchantment.builder(
+                        Enchantment.definition(
+                                items.getOrThrow(ItemTags.WEAPON_ENCHANTABLE),
+                                items.getOrThrow(ItemTags.MACE_ENCHANTABLE),
+
+                                3,
+                                3,
+                                Enchantment.leveledCost(8, 5),
+                                Enchantment.leveledCost(30, 7),
+                                12,
+
+                                AttributeModifierSlot.MAINHAND
+                        ))
+                .addEffect(
+                        EnchantmentEffectComponentTypes.POST_ATTACK,
+                        EnchantmentEffectTarget.ATTACKER, EnchantmentEffectTarget.VICTIM,
+                        new ExplosiveEnchantmentEffect()
+                )
+        );
+    }
+
+    private static void register(Registerable<Enchantment> registry, RegistryKey<Enchantment> key, Enchantment.Builder builder) {
         registry.register(key, builder.build(key.getValue()));
     }
 }
-
